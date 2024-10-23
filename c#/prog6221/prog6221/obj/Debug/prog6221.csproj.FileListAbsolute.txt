@@ -1,0 +1,6 @@
+c:\users\gnse\documents\visual studio 2012\Projects\prog6221\prog6221\bin\Debug\prog6221.exe.config
+c:\users\gnse\documents\visual studio 2012\Projects\prog6221\prog6221\bin\Debug\prog6221.exe
+c:\users\gnse\documents\visual studio 2012\Projects\prog6221\prog6221\bin\Debug\prog6221.pdb
+c:\users\gnse\documents\visual studio 2012\Projects\prog6221\prog6221\obj\Debug\prog6221.csprojResolveAssemblyReference.cache
+c:\users\gnse\documents\visual studio 2012\Projects\prog6221\prog6221\obj\Debug\prog6221.exe
+c:\users\gnse\documents\visual studio 2012\Projects\prog6221\prog6221\obj\Debug\prog6221.pdb
