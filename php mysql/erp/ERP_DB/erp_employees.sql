@@ -1,0 +1,20 @@
+CREATE TABLE `employees` (
+  `EmpID` int NOT NULL,
+  `employeeNumber` int NOT NULL AUTO_INCREMENT,
+  `FirstName` varchar(30) DEFAULT NULL,
+  `LastName` varchar(30) DEFAULT NULL,
+  `DepId` int NOT NULL,
+  `ManagerName` varchar(30) DEFAULT NULL,
+  `JobTitle` varchar(30) DEFAULT NULL,
+  `LeaveBalance` decimal(10,0) DEFAULT NULL,
+  `StartDate` date DEFAULT NULL,
+  `EndDate` varchar(45) DEFAULT NULL,
+  `Address` varchar(30) DEFAULT NULL,
+  `BenefitID` int DEFAULT NULL,
+  PRIMARY KEY (`EmpID`),
+  UNIQUE KEY `employeeNumber_UNIQUE` (`employeeNumber`),
+  KEY `dep_idx` (`DepId`),
+  KEY `ben_idx` (`BenefitID`),
+  CONSTRAINT `ben` FOREIGN KEY (`BenefitID`) REFERENCES `benefits` (`BenefitID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `dep` FOREIGN KEY (`DepId`) REFERENCES `departments` (`DepId`) ON DELETE CASCADE ON UPDATE CASCADE
+)
