@@ -1,0 +1,71 @@
+-- Create the database
+CREATE DATABASE viva_db;
+GO
+
+-- Use the database
+USE viva_db;
+GO
+
+-- Create Customer table
+CREATE TABLE Customer (
+    IdNumber VARCHAR(20) PRIMARY KEY, -- Assuming IdNumber is unique for each customer
+    Name VARCHAR(50),
+    Surname VARCHAR(50),
+    Gender VARCHAR(10),
+    PhysicalAddress VARCHAR(255),
+    CellNo VARCHAR(15),
+    NextOfKin VARCHAR(100),
+    CellNoOfNextOfKin VARCHAR(15),
+    CustomerType VARCHAR(50)
+);
+GO
+
+-- Create Transaction table
+CREATE TABLE Transactions (
+    TransId INT PRIMARY KEY IDENTITY(1,1),
+    IdNumber VARCHAR(20), -- FK to Customer
+    DateOfTransaction DATE,
+    MaxCollectionAmount DECIMAL(10, 2),
+    AmountRequested DECIMAL(10, 2),
+    DateOfDebit DATE,
+    FOREIGN KEY (IdNumber) REFERENCES Customer(IdNumber)
+);
+GO
+
+-- Create Admin table
+CREATE TABLE Admin (
+    AdminID INT PRIMARY KEY IDENTITY(1,1),
+    Title VARCHAR(10),
+    Firstname VARCHAR(50),
+    Surname VARCHAR(50),
+    Role VARCHAR(50),
+    Cellphone VARCHAR(15),
+    EmailAddress VARCHAR(100),
+    Password varchar(100)
+);
+GO
+
+ALTER TABLE Transactions
+ADD toBePaid DECIMAL(10, 2);
+
+select * from Admin;
+
+INSERT INTO Admin (Title, Firstname, Surname, Role, Cellphone, EmailAddress, Password)
+VALUES 
+('Mr', 'John', 'Mokoena', 'System Administrator', '0821234567', 'john.mokoena@example.com'),
+('Ms', 'Thandi', 'Nkosi', 'Support Specialist', '0839876543', 'thandi.nkosi@example.com');
+
+ALTER TABLE Admin
+ADD Password VARCHAR(100);
+
+INSERT INTO Admin (Title, Firstname, Surname, Role, Cellphone, EmailAddress, Password)
+VALUES 
+('Mr', 'John', 'Mokoena', 'System Administrator', '0821234567', 'john.mokoena@example.com', 'John@123'),
+('Ms', 'Thandi', 'Nkosi', 'Support Specialist', '0839876543', 'thandi.nkosi@example.com', 'Thandi@321');
+
+USE viva_db;
+ALTER AUTHORIZATION ON DATABASE::viva_db TO dev;
+
+select * from Customer;
+
+select * from Transactions;

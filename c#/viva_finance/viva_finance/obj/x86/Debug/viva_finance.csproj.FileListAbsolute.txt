@@ -1,0 +1,11 @@
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\bin\Debug\viva_finance.exe.config
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\bin\Debug\viva_finance.exe
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\bin\Debug\viva_finance.pdb
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\obj\x86\Debug\viva_finance.customer.resources
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\obj\x86\Debug\viva_finance.Form1.resources
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\obj\x86\Debug\viva_finance.Properties.Resources.resources
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\obj\x86\Debug\viva_finance.csproj.GenerateResource.Cache
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\obj\x86\Debug\viva_finance.exe
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\obj\x86\Debug\viva_finance.pdb
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\obj\x86\Debug\viva_finance.transaction.resources
+C:\Users\Dev\OneDrive\Documentos\Visual Studio 2010\Projects\viva_finance\viva_finance\obj\x86\Debug\viva_finance.adminDashboard.resources
