@@ -1,9 +1,0 @@
-ForecastingEngine
-ReportGenerator
-FinancialManagementSystem
-Transaction
-ExpenseCategory
-TransactionManager
-Financial
-BudgetManager
-IncomeSource
