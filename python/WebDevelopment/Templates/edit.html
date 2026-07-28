@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="form-container">
+
+        <h1>Edit Student</h1>
+        <p>Update the student's information below.</p>
+
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form action="/edit/{{ student[0] }}" method="POST">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value="{{ student[1] }}"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value="{{ student[2] }}"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course</label>
+                <input
+                    type="text"
+                    id="course"
+                    name="course"
+                    value="{{ student[3] }}"
+                    required>
+            </div>
+
+            <div class="button-group">
+
+                <button type="submit" class="btn btn-save">
+                    Update Student
+                </button>
+
+                <a href="/" class="btn btn-cancel">
+                    Cancel
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
